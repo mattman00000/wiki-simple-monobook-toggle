@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Wikimedia Monobook Toggle
 // @namespace    https://github.com/mattman00000
-// @version      0.0.1
+// @version      0.0.2
 // @description  try to take over the world!
 // @author       mattman00000
 // @match        *://*.wikia.com/*
@@ -16,6 +16,6 @@
 	
 	//javascript: //from bookmarklet version
 	if (!window.location.search.includes("useskin=monobook")) {
-		window.location.assign(window.location.protocol+"//"+window.location.host+window.location.pathname+window.location.search+((window.location.search?"&":"?")+"useskin=monobook")+window.location.hash
+		window.location.assign(window.location.protocol+"//"+window.location.host+window.location.pathname+window.location.search+((window.location.search?"&":"?")+"useskin=monobook")+window.location.hash);
 	}
 })();
